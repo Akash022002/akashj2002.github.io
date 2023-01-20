@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/contactus.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Contact Us</h2>
+      <form action="#" id="loginform">
+        <div class="form-field">
+          <label for="loginUsername">Name</label>
+          <input type="text" id="loginUserName" placeholder="Enter Name" />
+          <small class="alert-message">Error</small>
+        </div>
+        <div class="form-field">
+          <label for="requestEmail">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your Email"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <div class="form-field">
+           
+        </div>
+      </form>
+      <form action="#" class="form-request">
+        <div class="form-field">
+          <label >Query</label>
+          <input
+            type="text"
+            name=""
+            placeholder="Enter Your Query"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <button class="btn" type="submit">go</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__title">Akash</p>
+      <div class="footer__social">
+          <a href="https://www.facebook.com/akash.sawant.54738943" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+          <a href="https://www.instagram.com/its_incredible_ak/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+          <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+      </div>
+      <p class="footer__copy">&#169; concern. All rigths reserved</p>
+  </footer>
+
+
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
