@@ -1,88 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/contactus.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Contact Us</h2>
+      <form action="#" id="loginform">
+        <div class="form-field">
+          <label for="loginUsername">Name</label>
+          <input type="text" id="loginUserName" placeholder="Enter Name" />
+          <small class="alert-message">Error</small>
+        </div>
+        <div class="form-field">
+          <label for="requestEmail">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your Email"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <div class="form-field">
+           
+        </div>
+      </form>
+      <form action="#" class="form-request">
+        <div class="form-field">
+          <label >Query</label>
+          <input
+            type="text"
+            name=""
+            placeholder="Enter Your Query"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <button class="btn" type="submit">go</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__title">Akash</p>
+      <div class="footer__social">
+          <a href="https://www.facebook.com/akash.sawant.54738943" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+          <a href="https://www.instagram.com/its_incredible_ak/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+          <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+      </div>
+      <p class="footer__copy">&#169; concern. All rigths reserved</p>
+  </footer>
 
 
-*::before::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    fill-opacity: blur(5px);
-}
-body{
-    font-family: 'Poppins', sans-serif; 
-    width: 100%;
-    height: 100vh;
-    background:url(https://source.unsplash.com/random);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    fill-opacity: blur(55px);
-    text-shadow: 2px 1px 1px black;
-    padding-top: 80px;
-}
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-.login-container{
-    position: relative;
-    top: 20%;
-    margin: auto;
-    max-width: 600px;
-    height: 550px;
-    background-color: rgba(20, 20, 20, 0.8);
-    color: #ddd;
-    border-radius:55px;
-     
-    padding: 2rem;
-    box-shadow:  0 0 10px 5px rgba(0, 0, 0, 0.4);
-}
-.btn{
-    width: 120px;
-    margin:  1.5rem 0;
-    border-radius: 10px;
-}
-.btn:active{
-    transform: scale(0.98);
-}
-.fa{
-   cursor: pointer; 
-}
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
 
-.form-field input{
-    color: #ddd;
-}
-.alert-message{
-    visibility: hidden;
-}
-.form-field.error input{
-    border-color: red;
-}
-.form-field.success input{
-    border-color: green;
-}
-
-/* From here the footer section was started*/
-
-.footer {
-    background-color: var(--second-color);
-    color: #fff;
-    text-align: center;
-    font-weight: var(--font-semi);
-    padding: 2rem 0;
-  }
-  
-  .footer__title {
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
-  }
-  
-  .footer__social {
-    margin-bottom: var(--mb-4);
-  }
-  
-  .footer__icon {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 var(--mb-2);
-  }
-  
-  .footer__copy {
-    font-size: var(--smaller-font-size);
-  }
+    <script src="./form.js"></script>
+  </body>
+</html>
